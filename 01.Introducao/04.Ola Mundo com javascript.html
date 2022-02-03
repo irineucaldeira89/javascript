@@ -1,0 +1,79 @@
+Transcricao do Video:
+
+Para iniciarmos nosso aprendizado em JavaScript, construiremos o projeto do site Aparecida Nutrição.
+
+O primeiro passo será baixar o projeto inicial do treinamento, disponível nos exercícios. Após descompactá-lo, acesse a pasta introducao-javascript do seu computador, e depois abra o arquivo no editor de textos. Nós vamos abri-lo também no browser, para nos familiarizarmos com o site.
+
+A nutricionista Aparecida fazia controle dos clientes com fichas cadastrais, preenchidas manualmente, nas quais eram armazenados dados como "Nome", "Peso", "Gordura Corporal" e outros. Com a criação do site, ela conseguirá armazenar as informações, a serem exibidas em uma tabela, em que novos cadastros serão adicionados dinamicamente por meio do JavaScript, e poderão ser filtrados posteriormente. Ela também não precisará mais fazer cálculos manualmente, como os de IMC e da porcentagem de gordura corporal dos clientes. Todos serão realizados utilizando-se o JavaScript. Criaremos um site que realmente facilitará o trabalho da Aparecida!
+
+Começaremos criando a função que exibirá a mensagem "Hello World", ou "Olá Mundo" no JS.
+
+No curso, utilizaremos o editor de textos Atom, mas existem diversos outros como o Sublime Text 3 e o Visual Studio Code. Escolha de acordo com sua preferência.
+
+Adicionaremos a funcionalidade e o dinamismo na página de pacientes, e para isto precisaremos primeiro aprender como utilizarmos o JavaScript corretamente nas páginas. Uma primeira tentativa consiste em utilizarmos as funções dentro do corpo de nossa página.
+
+No início do arquivo index.html, logo após a tag <body>, exibiremos um alerta com JavaScript, com a função alert:
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aparecida Nutrição</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    alert("Olá mundo");
+
+    <!-- Restante do index.html -->
+</body>
+
+Ao abrirmos a página index.html no navegador, veremos o seguinte resultado:
+
+O script está sendo exibido como texto, ou seja, o navegador não fez nenhum tratamento especial para interpretar o código. Precisaremos adicionar a tag <script>, mas o JavaScript não será carregado. Iremos então adicioná-lo dentro da tag <head>:
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aparecida Nutrição</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script>
+        alert("Olá mundo");
+    </script>
+
+</head> 
+
+Agora, quando recarregarmos a página no navegador, nosso trecho de script será interpretado como um código, e não como um conteúdo qualquer da página.
+
+O alerta com a mensagem foi exibido!
+
+A função alert é uma das opções para se exibir mensagens com JavaScript, porém, ela não é a única. Outra função útil para isto é o console.log, considerado "mais agradável" para a exibição de uma mensagem por não envolver um pop-up. A mensagem será exibida no console do navegador.
+
+Vamos testá-la:
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aparecida Nutrição</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script>
+        console.log("Oi Mundo");
+    </script>
+
+</head> 
+
+No Linux ou no Windows, acessamos o console do navegador pressionando a tecla "F12"; no MacOS basta pressionar "COMMAND + ALT + J". Ao abrirmos o console, veremos a mensagem como gostaríamos:
+
+Além disso, o console do navegador também aceita funções JavaScript. Poderemos escrever novamente console.log:
+
+console.log("Aqui tem um recado para você");
+
+Ou até mesmo um alerta:
+
+alert("Olá");
+
+Com o alert e o console.log, damos os primeiros passos com o JavaScript, entendendo que para seu bom funcionamento, o código deve estar entre as tags <script>. Caso contrário, os navegadores não irão entendê-lo.
+
